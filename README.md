@@ -11,7 +11,6 @@ At 42 you were not allowed to use almost any libraries whatsoever. You had to bu
 To see the school's project instructions read the [PDF Instructions](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/fillit.pdf). To see my logic, see the [Logic Flow Chart](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/Fillit_FLOWCHART.pdf). For a list of (nearly) all functions check out the [Header File](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/fillit.h). The main function is located in the [fillit.c](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/fillit.c) file. 
 
 ### Overview 
-The program is based off the idea of 'Tetris' where you are given a set of 'tetriminos'. 
 
 <table><tr><td valign="top" width="50%">
 
