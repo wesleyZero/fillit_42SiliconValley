@@ -120,7 +120,7 @@ For a valid input, find out what type of tetriminos piece it is, and find out ho
 
 <table><tr><td valign="top" width="50%">
 
-<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/Block_Types.png?raw=true" align="left" style="width: 100%" />  
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/block_types_3.png?raw=true" align="left" style="width: 100%" />  
 
 
 </td><td valign="top" width="50%">
@@ -139,7 +139,7 @@ The pieces can come in 5 different **shapes**...
 
 </td><td valign="top" width="50%">
 
-<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/possible_rotations.png?raw=true" align="left" style="width: 100%" />  
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/rotations_2.png?raw=true" align="left" style="width: 100%" />  
 
 
 </td></tr></table>  
@@ -250,4 +250,3 @@ Check each valid placement of the pieces, in the order that they are preferred f
 
 </td></tr></table>
 <br />
-
