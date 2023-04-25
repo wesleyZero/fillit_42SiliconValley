@@ -176,7 +176,7 @@ If the input is valid, then search for a solution
 
 </td><td valign="top" width="50%">
 
-<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_1.png?raw=true" align="left" style="width: 100%" />  
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_main.png?raw=true" align="left" style="width: 100%" />  
 
 
 </td></tr></table>  
@@ -185,7 +185,7 @@ If the input is valid, then search for a solution
 
 <table><tr><td valign="top" width="50%">
 
-<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_valid_tetris.png?raw=true" align="left" style="width: 100%" />  
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_valid_tetris2.png?raw=true" align="left" style="width: 100%" />  
 
 
 </td><td valign="top" width="50%">
@@ -250,3 +250,4 @@ Check each valid placement of the pieces, in the order that they are preferred f
 
 </td></tr></table>
 <br />
+
