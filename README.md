@@ -125,7 +125,7 @@ For a valid input, find out what type of tetriminos piece it is, and find out ho
 
 </td><td valign="top" width="50%">
 
-The pieces can come in 5 different **shapes**.   
+The pieces can come in 5 different **shapes**...  
 
 
 </td></tr></table>  
@@ -134,7 +134,7 @@ The pieces can come in 5 different **shapes**.
 
 <table><tr><td valign="top" width="50%">
 
-and each shape can come in a number of different **rotations**. Depending on symmetry, some of these rotations are equivalent.   
+... and each shape can come in a number of different **rotations**. Depending on symmetry, some of these rotations are equivalent.   
 
 
 </td><td valign="top" width="50%">
