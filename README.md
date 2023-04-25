@@ -20,7 +20,7 @@ The program is based off the idea of 'Tetris' where you are given a set of 'tetr
 
 </td><td valign="top" width="50%">
 
-The program was designed with respect to the classic game 'Tetris'   
+The program was designed with inspiration to the classic game 'Tetris'. Where your goal is to make the smallest square possible with a given set of tetriminos pieces.   
 
 
 </td></tr></table>  
@@ -29,12 +29,177 @@ The program was designed with respect to the classic game 'Tetris'
 
 <table><tr><td valign="top" width="50%">
 
-<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/example_input.png?raw=true" align="left" style="width: 100%" />  
+
+
+### Input example  
+The input to the program would look like this. '#' characters to describe the existence of a block. '.' characters to describe the existence of an empty space.  
 
 
 </td><td valign="top" width="50%">
 
-The input to the program would look like this. '#' characters to describe the existence of a block. '.' characters to describe the existence of an empty space.  
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/example_input.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/input_rules.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+
+
+### Input rules  
+This was the description of the tetriminos, so I  knew that I had to validate all of these properties.   
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+
+
+### I/O  
+The tetriminos will be given in sequence. Their labels will be alphabetical in the order they were input i.e. 'A' then 'B' then 'C' ...  
+  
+
+The **goal of the program** will then need to output the smallest possible square for the provided tetriminos, designating each block with it's respective label.  
+  
+
+For invalid input, the program simply outputs 'error' without any newline character.  
+
+
+</td><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/example_IO.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/logic_flow_0.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+
+
+### Check the input  
+First step is to check if the input is valid so that I can work with it.  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+
+
+### Parse input and classify the pieces  
+For a valid input, find out what type of tetriminos piece it is, and find out how it's oriented.   
+
+
+</td><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/logic_flow_1.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/Block_Types.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+The pieces can come in 5 different **shapes**.   
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+and each shape can come in a number of different **rotations**. Depending on symmetry, some of these rotations are equivalent.   
+
+
+</td><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/possible_rotations.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/logic_flow_2.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+
+
+### Find the smallest square the pieces can fit into  
+Move the given pieces around on a virtual board. Use a backtracking algorithm to traverse the possible solutions in a decision tree. Where each decision is the location of a placed piece.  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+
+
+### The primary logic  
+While the backtracking algorithm doesn't give you a solution, increase the virtual board size (the 'map') until the backtracking algorithm can find a solution.  
+
+
+</td><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_0.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_2.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+
+
+### Backtracking algorithm  
+Check each valid placement of the pieces, in the order that they are preferred for a solution. Once a solution is found, return to the parent caller and it can get output onto the terminal. The variable *tetris_map* stores the current placement of pieces on the virtual board. If a solution is found, it's stored in the variable called *map* and returned.  
+  
+
+*The base case is on line 92*  
+  
+
+*The recursive case is on line 103.*  
+  
+
+*No solution case on line 110*  
 
 
 </td></tr></table>
