@@ -6,9 +6,9 @@ This project was done at a free coding school called '42 Silicon Valley', which 
 #### How did this coding school work?
 At 42 you were not allowed to use almost any libraries whatsoever. You had to build everything from scratch. 42 had no in-person instructors, it was a self taught school.
 
-## Project Description 
+## Description 
 
-[PDF Instructions](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/fillit.pdf), [Logic Flow Chart](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/Fillit_FLOWCHART.pdf), and [Header File](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/fillit.h) to see all of the functions neccessary for the program. The main function is located in the [fillit.c](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/fillit.c) file. 
+To see the school's project instructions read the [PDF Instructions](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/fillit.pdf). To see my logic, see the [Logic Flow Chart](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/Fillit_FLOWCHART.pdf). For a list of (nearly) all functions check out the [Header File](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/fillit.h). The main function is located in the [fillit.c](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/fillit.c) file. 
 
 ### Overview 
 The program is based off the idea of 'Tetris' where you are given a set of 'tetriminos'. 
