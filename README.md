@@ -167,8 +167,51 @@ Move the given pieces around on a virtual board. Use a backtracking algorithm to
 
 
 
-### The primary logic  
+### Main function  
+If the input is valid, then search for a solution  
+  
+
+[See code](https://github.com/wesleyZero/fillit_42SiliconValley/blob/690b5efd5b223078b6ad65c437d0e042edfcf01b/42SV_fillit/fillit.c#L27)  
+
+
+</td><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_1.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/code_valid_tetris.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+
+
+### Is the input valid?  
+Parse the input, check to make sure that each piece is a valid tetriminos block.  
+  
+
+[See code](https://github.com/wesleyZero/fillit_42SiliconValley/blob/be466d8cfce0fcaeb8e8fa5ef742f9af23bd2cba/42SV_fillit/valid_tetris.c#L51)  
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+
+
+### Primary logic  
 While the backtracking algorithm doesn't give you a solution, increase the virtual board size (the 'map') until the backtracking algorithm can find a solution.  
+  
+
+[See code](https://github.com/wesleyZero/fillit_42SiliconValley/blob/be466d8cfce0fcaeb8e8fa5ef742f9af23bd2cba/42SV_fillit/solver.c#L113)  
 
 
 </td><td valign="top" width="50%">
@@ -189,7 +232,7 @@ While the backtracking algorithm doesn't give you a solution, increase the virtu
 
 
 
-### Backtracking algorithm  
+### Backtracking algorithm   
 Check each valid placement of the pieces, in the order that they are preferred for a solution. Once a solution is found, return to the parent caller and it can get output onto the terminal. The variable *tetris_map* stores the current placement of pieces on the virtual board. If a solution is found, it's stored in the variable called *map* and returned.  
   
 
@@ -200,7 +243,11 @@ Check each valid placement of the pieces, in the order that they are preferred f
   
 
 *No solution case on line 110*  
+  
+
+[See code](https://github.com/wesleyZero/fillit_42SiliconValley/blob/be466d8cfce0fcaeb8e8fa5ef742f9af23bd2cba/42SV_fillit/solver.c#L84)  
 
 
 </td></tr></table>
 <br />
+
