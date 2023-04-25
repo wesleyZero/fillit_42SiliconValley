@@ -10,4 +10,6 @@ At 42 you were not allowed to use almost any libraries whatsoever. You had to bu
 
 [PDF Instructions](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/fillit.pdf)
 
+[Logic Flow Chart](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/Fillit_FLOWCHART.pdf)
 
+[Header File](https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/42SV_fillit/fillit.h) to see all of the functions neccessary for the program. 
