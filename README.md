@@ -12,3 +12,30 @@ To see the school's project instructions read the [PDF Instructions](https://git
 
 ### Overview 
 The program is based off the idea of 'Tetris' where you are given a set of 'tetriminos'. 
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/tetris.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+The program was designed with respect to the classic game 'Tetris'   
+
+
+</td></tr></table>  
+
+<br/>  
+
+<table><tr><td valign="top" width="50%">
+
+<img src="https://github.com/wesleyZero/fillit_42SiliconValley/blob/main/README_RESOURCES/example_input.png?raw=true" align="left" style="width: 100%" />  
+
+
+</td><td valign="top" width="50%">
+
+The input to the program would look like this. '#' characters to describe the existence of a block. '.' characters to describe the existence of an empty space.  
+
+
+</td></tr></table>
+<br />
